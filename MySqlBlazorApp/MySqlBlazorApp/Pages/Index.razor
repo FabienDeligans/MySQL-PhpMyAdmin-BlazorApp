@@ -1,0 +1,31 @@
+﻿@page "/"
+@using MySqlBlazorApp.Data
+@using MySqlBlazorApp.Models
+@inject Context Context
+
+<button @onclick="Create">Create family</button>
+Nb Family : <input value="@Count"/>
+
+
+@code
+{
+    private int Count { get; set; } 
+    protected override void OnInitialized()
+    {
+        Count = Context.Famille.Count(); 
+    }
+
+    private void Create()
+    {
+        var fam = new Famille
+        {
+            NomDeFamille = "deligans"
+        };
+
+        Context.Famille.Add(fam);
+        Context.SaveChanges(); 
+        Count = Context.Famille.Count(); 
+
+        InvokeAsync(StateHasChanged); 
+    }
+}
