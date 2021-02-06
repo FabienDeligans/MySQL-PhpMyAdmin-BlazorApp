@@ -87,7 +87,7 @@ Pour exécuter MySQL et PhpMyAdmin, il vous faudra Docker ainsi qu'une fenêtre 
 
 Ouvrir VisualStudio et Créer un nouveau projet, choisir "Application Blazor".
 
-![image-20210206180939702](https://github.com/FabienDeligans/MySQL-PhpMyAdmin-BlazorApp/tree/master/pictures/image-20210206180939702.png)
+![image-20210206180939702](../master/pictures/image-20210206180939702.png)
 
 On va choisir la version Server qui est la plus sûre dans un environnement de production à l'heure actuelle. On va se baser sur la version **3.1 de .NetCore**  pour notre application. 
 
@@ -95,13 +95,13 @@ On va choisir la version Server qui est la plus sûre dans un environnement de p
 
 Il nous faudra des NuGets : 
 
-![image-20210206182212765](https://github.com/FabienDeligans/MySQL-PhpMyAdmin-BlazorApp/tree/master/pictures/image-20210206182212765.png)
+![image-20210206182212765](../master/pictures/image-20210206182212765.png)
 
 On sera vigilant au fait d'utiliser la version 3.1.11 de Microsoft.EntityFrameworkCore.Tools car les versions suivantes sont basées sur .Net Core 5.
 
 Pour l'exemple, l'application est construite ainsi : 
 
-![image-20210206181633295](https://github.com/FabienDeligans/MySQL-PhpMyAdmin-BlazorApp/tree/master/pictures/image-20210206181633295.png)
+![image-20210206181633295](../master/pictures/image-20210206181633295.png)
 
 Une famille peut avoir 0 ou plusieurs enfants et 0 ou plusieurs parents
 
@@ -251,7 +251,7 @@ A partir de VisualStudio, on va créer la base de données.
 
 lancer la Console du Gestionnaire de package
 
- ![image-20210206183609842](https://github.com/FabienDeligans/MySQL-PhpMyAdmin-BlazorApp/tree/master/pictures/image-20210206183609842.png)
+ ![image-20210206183609842](../master/pictures/image-20210206183609842.png)
 
 Pour créer la structure du script SQL qui sera injecté dans MySQL, on va créer une migration par la commande suivante : 
 
@@ -307,8 +307,8 @@ Nb Family : <input value="@Count"/>
 }
 ```
 
-![image-20210206184358933](https://github.com/FabienDeligans/MySQL-PhpMyAdmin-BlazorApp/tree/master/pictures/image-20210206184358933.png)
+![image-20210206184358933](../master/pictures/image-20210206184358933.png)
 
 Lorsque l'on clique sur le bouton "Create family", on crée et on enregistre une famille dans la base de données. La balise input affiche le compte de famille dans la base de données. 
 
-![image-20210206184615442](https://github.com/FabienDeligans/MySQL-PhpMyAdmin-BlazorApp/tree/master/pictures/image-20210206184615442.png)
+![image-20210206184615442](../master/pictures/image-20210206184615442.png)
