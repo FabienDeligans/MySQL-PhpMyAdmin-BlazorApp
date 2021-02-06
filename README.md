@@ -87,7 +87,7 @@ Pour exécuter MySQL et PhpMyAdmin, il vous faudra Docker ainsi qu'une fenêtre 
 
 Ouvrir VisualStudio et Créer un nouveau projet, choisir "Application Blazor".
 
-![image-20210206180939702](C:\Users\delig\AppData\Roaming\Typora\typora-user-images\image-20210206180939702.png)
+![image-20210206180939702](\pictures\image-20210206180939702.png)
 
 On va choisir la version Server qui est la plus sûre dans un environnement de production à l'heure actuelle. On va se baser sur la version **3.1 de .NetCore**  pour notre application. 
 
